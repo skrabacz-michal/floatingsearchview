@@ -135,16 +135,16 @@ public class FloatingSearchView extends FrameLayout {
     private Drawable mBackgroundDrawable;
     private boolean mDimBackground;
     private boolean mDismissOnOutsideTouch = true;
-    private boolean mIsFocused;
+    protected boolean mIsFocused;
     private OnFocusChangeListener mFocusChangeListener;
 
     private CardView mQuerySection;
-    private OnSearchListener mSearchListener;
+    protected OnSearchListener mSearchListener;
     private SearchInputView mSearchInput;
     private int mQueryTextSize;
     private boolean mCloseSearchOnSofteKeyboardDismiss;
     private String mTitleText;
-    private boolean mIsTitleSet;
+    protected boolean mIsTitleSet;
     private int mSearchInputTextColor = -1;
     private int mSearchInputHintColor = -1;
     private View mSearchInputParent;
@@ -173,7 +173,7 @@ public class FloatingSearchView extends FrameLayout {
     private Drawable mIconClear;
     private int mBackgroundColor;
     private boolean mSkipQueryFocusChangeEvent;
-    private boolean mSkipTextChangeEvent;
+    protected boolean mSkipTextChangeEvent;
 
     private View mDivider;
     private int mDividerColor;
